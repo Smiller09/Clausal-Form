@@ -26,12 +26,6 @@ public:
 	*/
 	static Formula * conjunctiveNormalForm(Formula * formula);
 	
-	/**
-	* Converts to Disjunctive Normal Form
-	* @param formula 	Formula to convert to DNF
-	* @return formula in DNF
-	*/
-//	static Formula * disjunctiveNormalForm(Formula * formula);
 	
 	/**
 	* Constructor used when the formula is AND or OR or IMPLICATION or BICONDITIONAL
@@ -109,7 +103,6 @@ private:
 	static Formula * driveInNegation(Formula * formula);
 	static Formula * removeDoubleNegation(Formula * formula);
 	static Formula * distributeORoverAND(Formula * formula);
-	//static Formula * distributeANDoverOR(Formula * formula);
 
 };
 
